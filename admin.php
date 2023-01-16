@@ -1,6 +1,6 @@
 <?php
-include "vendor/connect.php";
-$sql = mysqli_query($connect, "SELECT * FROM `users`;");
+include "vendor/connect.php";  //подключения файла, который делает авторизацию в ПХП май админ
+$sql = mysqli_query($connect, "SELECT * FROM `users`;"); // Выборка из базы данных, файл доступа + выборка из базы юзеров
 ?>
 
 
