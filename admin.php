@@ -19,7 +19,7 @@ $sql = mysqli_query($connect, "SELECT * FROM `users`;");
             <h1>Клиенты</h1>
             <ul class="clients__list">
                 <?php
-                while ($clients = mysqli_fetch_assoc($sql)){
+                while ($clients = mysqli_fetch_assoc($sql)){  // цикл вывода для каждого пользователя его карточки с данными
                     ?>
                     <li class="clients__item">
                         <div>Имя: <?php echo $clients['full_name'];?></div>
